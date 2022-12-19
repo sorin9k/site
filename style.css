@@ -1,0 +1,87 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-image: url(back.jpg);
+ background-size: 100%;
+  background-position: 100% 30%;
+  background-repeat: no-repeat;
+
+}
+.menu-bar{
+  background: rgb(3, 68, 105);
+  text-align: center;
+
+}
+.menu-bar ul{
+  display: inline-flex;
+  list-style: none;
+
+}
+.menu-bar ul li{
+  width: 120px;
+  margin: 15px;
+  padding: 7px;
+  position: relative;
+}
+.menu-bar ul li a{
+  text-decoration: none;
+  color:antiquewhite;
+}
+ .menu-bar ul li:after{
+  content:'';
+  height: 3px;
+  width: 0;
+  background: rgb(252, 248, 248);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+.menu-bar ul li:hover:after{
+  width: 100%;
+}
+.content{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  color: white;
+}
+button{
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #03225a;
+  background: transparent;
+  color: rgb(242, 243, 247);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.content h1{
+  font-size: 70px;
+  margin-top: 130px;
+}
+.content p{
+  font-weight: 100;
+  line-height:25px;
+}
+span{
+  background: #2b2b2c;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+button:hover span{
+  width: 100%;
+}
